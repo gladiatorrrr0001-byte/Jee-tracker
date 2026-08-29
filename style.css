@@ -1,0 +1,365 @@
+:root {
+  --bg-main: #0b0f19;
+  --bg-card: #151d30;
+  --bg-card-hover: #1c263f;
+  --bg-subtle: #1e293b;
+  --border: #263554;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --accent-blue: #38bdf8;
+  --accent-purple: #818cf8;
+  --accent-green: #34d399;
+  --accent-amber: #fbbf24;
+  --accent-red: #f87171;
+  --radius-lg: 16px;
+  --radius-md: 10px;
+  --radius-sm: 6px;
+  --font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Header & Cards */
+.header {
+  margin-bottom: 2rem;
+}
+
+.brand {
+  margin-bottom: 1.5rem;
+}
+
+.badge-tag {
+  display: inline-block;
+  background: rgba(56, 189, 248, 0.15);
+  color: var(--accent-blue);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.brand h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 640px) {
+  .dashboard-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.card-label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+#targetDateInput {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: var(--radius-sm);
+  outline: none;
+  cursor: pointer;
+}
+
+.countdown-display {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.stat-number {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--accent-blue);
+  line-height: 1;
+}
+
+.stat-unit {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.percentage-pill {
+  background: rgba(52, 211, 153, 0.15);
+  color: var(--accent-green);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-sm);
+}
+
+.progress-bar-bg {
+  width: 100%;
+  height: 8px;
+  background: var(--bg-subtle);
+  border-radius: 99px;
+  overflow: hidden;
+  margin: 0.75rem 0;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-blue), var(--accent-green));
+  transition: width 0.35s ease;
+  border-radius: 99px;
+}
+
+.progress-stats {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+/* Tabs */
+.subject-tabs {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.tab-btn {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  padding: 0.85rem 1.15rem;
+  border-radius: var(--radius-md);
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+  background: var(--bg-card-hover);
+  color: var(--text-primary);
+}
+
+.tab-btn.active {
+  background: var(--bg-card-hover);
+  border-color: var(--accent-blue);
+  color: var(--text-primary);
+}
+
+.tab-badge {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+  background: var(--bg-subtle);
+}
+
+/* Active Subject Banner */
+.subject-overview {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.subject-overview-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.75rem;
+}
+
+.subject-overview-info h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.subject-overview-info p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.subject-progress-bar-bg {
+  width: 100%;
+  height: 6px;
+  background: var(--bg-subtle);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.subject-progress-bar-fill {
+  height: 100%;
+  background: var(--accent-purple);
+  transition: width 0.35s ease;
+  border-radius: 99px;
+}
+
+/* Chapters Accordion */
+.chapters-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.chapter-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: border-color 0.2s ease;
+}
+
+.chapter-card:hover {
+  border-color: #3b4d75;
+}
+
+.chapter-header {
+  padding: 1rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.chapter-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.chapter-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.2rem 0.45rem;
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+}
+
+.badge-high {
+  background: rgba(248, 113, 113, 0.15);
+  color: var(--accent-red);
+}
+
+.badge-medium {
+  background: rgba(251, 191, 36, 0.15);
+  color: var(--accent-amber);
+}
+
+.badge-low {
+  background: rgba(148, 163, 184, 0.15);
+  color: var(--text-secondary);
+}
+
+.chapter-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.chapter-ratio {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.chevron {
+  font-size: 0.75rem;
+  transition: transform 0.2s ease;
+}
+
+.chapter-card.open .chevron {
+  transform: rotate(180deg);
+}
+
+/* Topic Checklist */
+.topics-list {
+  display: none;
+  padding: 0.75rem 1.25rem 1.25rem 1.25rem;
+  background: rgba(11, 15, 25, 0.4);
+  border-top: 1px solid var(--border);
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.chapter-card.open .topics-list {
+  display: flex;
+}
+
+.topic-item {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  cursor: pointer;
+}
+
+.topic-item input[type="checkbox"] {
+  accent-color: var(--accent-blue);
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+}
+
+.topic-text {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+}
+
+.topic-item input:checked + .topic-text {
+  text-decoration: line-through;
+  color: #52627a;
+}

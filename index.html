@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/style.css">
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JEE Main Master Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    
+    <header class="header">
+      <div class="brand">
+        <span class="badge-tag">TARGET JEE</span>
+        <h1>Syllabus & Milestone Tracker</h1>
+      </div>
+
+      <div class="dashboard-cards">
+        <div class="card countdown-card">
+          <div class="card-meta">
+            <span class="card-label">Countdown to Exam</span>
+            <input type="date" id="targetDateInput" title="Set target date">
+          </div>
+          <div class="countdown-display">
+            <span id="daysRemaining" class="stat-number">0</span>
+            <span class="stat-unit">Days Left</span>
+          </div>
+        </div>
+
+        <div class="card progress-card">
+          <div class="card-meta">
+            <span class="card-label">Total Completion</span>
+            <span id="overallPercentage" class="percentage-pill">0%</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div id="overallProgressBar" class="progress-bar-fill" style="width: 0%;"></div>
+          </div>
+          <p class="progress-stats"><span id="completedTopicsCount">0</span> / <span id="totalTopicsCount">0</span> Topics Done</p>
+        </div>
+      </div>
+    </header>
+
+    <nav class="subject-tabs">
+      <button class="tab-btn active" data-subject="physics">
+        <span class="tab-title">Physics</span>
+        <span class="tab-badge" id="physicsTabProgress">0%</span>
+      </button>
+      <button class="tab-btn" data-subject="chemistry">
+        <span class="tab-title">Chemistry</span>
+        <span class="tab-badge" id="chemistryTabProgress">0%</span>
+      </button>
+      <button class="tab-btn" data-subject="maths">
+        <span class="tab-title">Mathematics</span>
+        <span class="tab-badge" id="mathsTabProgress">0%</span>
+      </button>
+    </nav>
+
+    <section class="subject-overview">
+      <div class="subject-overview-info">
+        <h2 id="activeSubjectTitle">Physics</h2>
+        <p id="activeSubjectStats">0 of 0 topics completed</p>
+      </div>
+      <div class="subject-progress-bar-bg">
+        <div id="activeSubjectProgressBar" class="subject-progress-bar-fill" style="width: 0%;"></div>
+      </div>
+    </section>
+
+    <main id="chaptersList" class="chapters-container">
+      </main>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+    <script src="/script.js"></script>
+  </body>
+
+</html>
