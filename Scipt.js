@@ -1,0 +1,359 @@
+const jeeSyllabus = {
+  Mathematics: [
+    {
+      name: "Vectors & 3D Geometry",
+      priority: "HIGH",
+      topics: [
+        { name: "Dot & Cross Products, Scalar Triple", completed: false },
+        { name: "Direction Cosines & Lines in 3D", completed: false },
+        { name: "Shortest Distance Between Lines", completed: false },
+        { name: "Equation of Planes & Intersections", completed: false }
+      ]
+    },
+    {
+      name: "Definite Integrals & Area",
+      priority: "HIGH",
+      topics: [
+        { name: "King's Property & Periodic Integrals", completed: false },
+        { name: "Leibniz Rule of Differentiation", completed: false },
+        { name: "Area Bounded Between Curves", completed: false },
+        { name: "Integration by Parts & Reductions", completed: false }
+      ]
+    },
+    {
+      name: "Coordinate Geometry (Conics & Lines)",
+      priority: "HIGH",
+      topics: [
+        { name: "Straight Lines & Pair of Lines", completed: false },
+        { name: "Circles & Tangent Conditions", completed: false },
+        { name: "Parabola (Standard & Parametric)", completed: false },
+        { name: "Ellipse & Hyperbola Properties", completed: false }
+      ]
+    },
+    {
+      name: "Matrices & Determinants",
+      priority: "HIGH",
+      topics: [
+        { name: "Properties of Determinants", completed: false },
+        { name: "Adjoint, Inverse & System of Equations", completed: false },
+        { name: "Cramer's Rule", completed: false },
+        { name: "Matrix Operations & Nilpotent/Orthogonal Types", completed: false }
+      ]
+    },
+    {
+      name: "Differential Calculus",
+      priority: "MEDIUM",
+      topics: [
+        { name: "Limits & Indeterminate Forms (L'Hopital)", completed: false },
+        { name: "Continuity & Differentiability", completed: false },
+        { name: "Monotonicity & Maxima-Minima", completed: false },
+        { name: "Tangents, Normals & Rate Measure", completed: false }
+      ]
+    },
+    {
+      name: "Differential Equations",
+      priority: "MEDIUM",
+      topics: [
+        { name: "Variable Separable Form", completed: false },
+        { name: "Homogeneous Differential Equations", completed: false },
+        { name: "Linear Differential Equations (IF method)", completed: false },
+        { name: "Order, Degree & Formation of DE", completed: false }
+      ]
+    },
+    {
+      name: "Sets, Relations & Functions",
+      priority: "MEDIUM",
+      topics: [
+        { name: "Types of Relations (Equivalence, Reflexive, etc.)", completed: false },
+        { name: "Domain, Range & Types of Functions (One-One/Onto)", completed: false },
+        { name: "Composite & Inverse Functions", completed: false },
+        { name: "Algebra of Sets & Power Sets", completed: false }
+      ]
+    },
+    {
+      name: "Trigonometry & Inverse Trigonometry",
+      priority: "MEDIUM",
+      topics: [
+        { name: "Trigonometric Identities & Compound Angles", completed: false },
+        { name: "Trigonometric Equations & General Solutions", completed: false },
+        { name: "ITF Domain, Range & Principal Values", completed: false },
+        { name: "Properties of Inverse Trigonometric Functions", completed: false }
+      ]
+    },
+    {
+      name: "Permutations & Combinations",
+      priority: "MEDIUM",
+      topics: [
+        { name: "Fundamental Counting Principle & Factorials", completed: false },
+        { name: "Arrangements (P(n,r)) & Selections (C(n,r))", completed: false },
+        { name: "Circular Permutation & Division into Groups", completed: false },
+        { name: "Derangements & Multinomial Theorem", completed: false }
+      ]
+    },
+    {
+      name: "Probability & Statistics",
+      priority: "MEDIUM",
+      topics: [
+        { name: "Conditional Probability & Bayes' Theorem", completed: false },
+        { name: "Independent Events & Random Variables", completed: false },
+        { name: "Mean, Median, Mode & Mean Deviation", completed: false },
+        { name: "Variance & Standard Deviation Calculation", completed: false }
+      ]
+    },
+    {
+      name: "Sequences, Series & Binomial",
+      priority: "MEDIUM",
+      topics: [
+        { name: "AP, GP, HP and AGP Series", completed: false },
+        { name: "Sigma Notations & Telescoping Sums", completed: false },
+        { name: "General & Middle Term in Binomial", completed: false },
+        { name: "Binomial Coefficients & Remainder Problems", completed: false }
+      ]
+    },
+    {
+      name: "Complex Numbers & Quadratics",
+      priority: "LOW",
+      topics: [
+        { name: "Euler's Form, Modulus & Argument", completed: false },
+        { name: "Geometry of Complex Numbers & Triangle Inequality", completed: false },
+        { name: "Roots & Coefficients Relations", completed: false },
+        { name: "Common Roots & Location of Roots", completed: false }
+      ]
+    }
+  ],
+
+  Physics: [
+    {
+      name: "Rotational Motion & Mechanics",
+      priority: "HIGH",
+      topics: [
+        { name: "Centre of Mass & Momentum Conservation", completed: false },
+        { name: "Moment of Inertia Theorems", completed: false },
+        { name: "Torque & Angular Momentum Conservation", completed: false },
+        { name: "Rolling Motion Dynamics", completed: false }
+      ]
+    },
+    {
+      name: "Modern Physics & Semiconductors",
+      priority: "HIGH",
+      topics: [
+        { name: "Photoelectric Effect & Dual Nature", completed: false },
+        { name: "Bohr Model & Hydrogen Spectrum", completed: false },
+        { name: "Nuclear Binding Energy & Decay Laws", completed: false },
+        { name: "Semiconductor Diodes & Logic Gates", completed: false }
+      ]
+    },
+    {
+      name: "Current Electricity",
+      priority: "HIGH",
+      topics: [
+        { name: "Ohm's Law, Drift Velocity & Resistance", completed: false },
+        { name: "Kirchhoff's Laws & Circuit Analysis", completed: false },
+        { name: "Wheatstone Bridge & Potentiometer/Meter Bridge", completed: false },
+        { name: "Electric Power & Heating Effects", completed: false }
+      ]
+    },
+    {
+      name: "Thermodynamics & KTG",
+      priority: "HIGH",
+      topics: [
+        { name: "First & Second Laws of Thermodynamics", completed: false },
+        { name: "Thermodynamic Processes (PV Diagrams)", completed: false },
+        { name: "Heat Engines & Carnot Cycle Efficiency", completed: false },
+        { name: "Kinetic Theory of Gases & Mean Free Path", completed: false }
+      ]
+    },
+    {
+      name: "Ray & Wave Optics",
+      priority: "MEDIUM",
+      topics: [
+        { name: "Refraction, Snell's Law & TIR", completed: false },
+        { name: "Lenses, Mirrors & Optical Instruments", completed: false },
+        { name: "Interference & Young's Double Slit (YDSE)", completed: false },
+        { name: "Diffraction & Polarisation", completed: false }
+      ]
+    },
+    {
+      name: "Electrostatics & Capacitance",
+      priority: "MEDIUM",
+      topics: [
+        { name: "Coulomb's Law & Electric Field", completed: false },
+        { name: "Gauss's Law & Electric Flux Applications", completed: false },
+        { name: "Electric Potential & Potential Energy", completed: false },
+        { name: "Capacitor Circuits & Dielectric Insertion", completed: false }
+      ]
+    },
+    {
+      name: "Magnetism & Magnetic Effects of Current",
+      priority: "MEDIUM",
+      topics: [
+        { name: "Biot-Savart Law & Ampere's Circuital Law", completed: false },
+        { name: "Lorentz Force & Motion of Charged Particles", completed: false },
+        { name: "Torque on Current Loop & Moving Coil Galvanometer", completed: false },
+        { name: "Earth's Magnetism & Magnetic Materials", completed: false }
+      ]
+    },
+    {
+      name: "EMI & Alternating Current",
+      priority: "MEDIUM",
+      topics: [
+        { name: "Faraday's Law, Lenz's Law & Induced EMF", completed: false },
+        { name: "Self & Mutual Inductance", completed: false },
+        { name: "LCR Series Circuit, Resonance & Power Factor", completed: false },
+        { name: "Transformers & AC Generators", completed: false }
+      ]
+    },
+    {
+      name: "Oscillations & Waves",
+      priority: "MEDIUM",
+      topics: [
+        { name: "Simple Harmonic Motion (SHM) Equations", completed: false },
+        { name: "Energy in SHM & Simple/Compound Pendulum", completed: false },
+        { name: "String Waves & Sound Wave Speed", completed: false },
+        { name: "Doppler Effect, Standing Waves & Beats", completed: false }
+      ]
+    },
+    {
+      name: "Kinematics & Laws of Motion",
+      priority: "LOW",
+      topics: [
+        { name: "1D & 2D Motion (Projectiles & Relative Velocity)", completed: false },
+        { name: "Newton's Laws & Free Body Diagrams", completed: false },
+        { name: "Static, Kinetic & Rolling Friction", completed: false },
+        { name: "Work-Energy Theorem & Collisions", completed: false }
+      ]
+    },
+    {
+      name: "Gravitation, Solids & Fluids",
+      priority: "LOW",
+      topics: [
+        { name: "Gravitational Field, Potential & Escape Velocity", completed: false },
+        { name: "Kepler's Laws & Satellite Motion", completed: false },
+        { name: "Hooke's Law & Young's Modulus (Elasticity)", completed: false },
+        { name: "Pascal's Law, Bernoulli's Principle & Viscosity", completed: false }
+      ]
+    },
+    {
+      name: "Units, Dimensions & EM Waves",
+      priority: "LOW",
+      topics: [
+        { name: "Dimensional Analysis & Significant Figures", completed: false },
+        { name: "Error Analysis & Vernier/Screw Gauge", completed: false },
+        { name: "Displacement Current & Maxwell's Equations", completed: false },
+        { name: "EM Spectrum Properties & Energy Density", completed: false }
+      ]
+    }
+  ],
+
+  Chemistry: [
+    {
+      name: "Chemical Bonding & Molecular Structure",
+      priority: "HIGH",
+      topics: [
+        { name: "VSEPR Theory & Molecular Shapes", completed: false },
+        { name: "Hybridization & Dipole Moments", completed: false },
+        { name: "Molecular Orbital Theory (MOT)", completed: false },
+        { name: "Hydrogen Bonding & Resonance", completed: false }
+      ]
+    },
+    {
+      name: "Coordination Compounds",
+      priority: "HIGH",
+      topics: [
+        { name: "Werner's Theory & IUPAC Naming", completed: false },
+        { name: "Isomerism in Complexes (Stereo & Structural)", completed: false },
+        { name: "Crystal Field Theory (CFT) & CFSE", completed: false },
+        { name: "Magnetic Properties & Colours", completed: false }
+      ]
+    },
+    {
+      name: "Aldehydes, Ketones & Carboxylic Acids",
+      priority: "HIGH",
+      topics: [
+        { name: "Nucleophilic Addition Reactions", completed: false },
+        { name: "Aldol & Cannizzaro Reactions", completed: false },
+        { name: "Reduction & Oxidation Reactions", completed: false },
+        { name: "Acidity, Decarboxylation & HVZ Reaction", completed: false }
+      ]
+    },
+    {
+      name: "Solutions & Electrochemistry",
+      priority: "HIGH",
+      topics: [
+        { name: "Raoult's Law & Colligative Properties", completed: false },
+        { name: "Van't Hoff Factor & Abnormal Molar Masses", completed: false },
+        { name: "Nernst Equation & Cell Potential", completed: false },
+        { name: "Kohlrausch's Law, Conductance & Batteries", completed: false }
+      ]
+    },
+    {
+      name: "Chemical Kinetics & Equilibrium",
+      priority: "MEDIUM",
+      topics: [
+        { name: "Rate Laws & Integrated Rate Equations", completed: false },
+        { name: "Arrhenius Equation & Activation Energy", completed: false },
+        { name: "Le Chatelier's Principle (Chemical Eq)", completed: false },
+        { name: "pH, Buffer Solutions & Solubility Product (Ksp)", completed: false }
+      ]
+    },
+    {
+      name: "Hydrocarbons & Haloalkanes",
+      priority: "MEDIUM",
+      topics: [
+        { name: "Electrophilic Aromatic Substitution", completed: false },
+        { name: "Markovnikov & Anti-Markovnikov Addition", completed: false },
+        { name: "SN1 and SN2 Reaction Mechanisms", completed: false },
+        { name: "Elimination Reactions (E1 & E2)", completed: false }
+      ]
+    },
+    {
+      name: "Amines, Biomolecules & Practical Chemistry",
+      priority: "MEDIUM",
+      topics: [
+        { name: "Basicity of Amines & Diazonium Salt Reactions", completed: false },
+        { name: "Carbohydrates, Glucose Structures & Glycosidic Linkages", completed: false },
+        { name: "Proteins, Amino Acids, Zwitterion & Nucleic Acids", completed: false },
+        { name: "Salt Analysis & Functional Group Detection Tests", completed: false }
+      ]
+    },
+    {
+      name: "d and f Block Elements",
+      priority: "MEDIUM",
+      topics: [
+        { name: "Electronic Configurations & Variable Oxidation States", completed: false },
+        { name: "Lanthanoid Contraction & Consequences", completed: false },
+        { name: "KMnO4 and K2Cr2O7 Reactions & Oxidizing Properties", completed: false },
+        { name: "Catalytic Properties & Interstitial Compounds", completed: false }
+      ]
+    },
+    {
+      name: "p-Block Elements & Periodic Classification",
+      priority: "LOW",
+      topics: [
+        { name: "Ionization Enthalpy, Electron Gain Enthalpy & Radii", completed: false },
+        { name: "Periodic Trends & Electronegativity Scales", completed: false },
+        { name: "Group 13 to 18 General Properties & Oxidation States", completed: false },
+        { name: "Anomalous Properties of Second Period Elements", completed: false }
+      ]
+    },
+    {
+      name: "Atomic Structure & Mole Concept",
+      priority: "LOW",
+      topics: [
+        { name: "Quantum Numbers & Electronic Configuration", completed: false }    { name: "De Broglie & Heisenberg Uncertainty", completed: false },
+        { name: "Concentration Terms (M, m, X)", completed: false },
+        { name: "Stoichiometry & Limiting Reagent", completed: false }
+      ]
+    },
+    {
+      name: "Thermodynamics & Thermochemistry",
+      priority: "LOW",
+      topics: [
+        { name: "First Law, Enthalpy (H) & Internal Energy (U)", completed: false },
+        { name: "Hess's Law & Bond Enthalpy Calculations", completed: false },
+        { name: "Entropy (S) & Second Law of Thermodynamics", completed: false },
+        { name: "Gibbs Free Energy (G) & Spontaneity Conditions", completed: false }
+      ]
+    }
+  ]
+};
